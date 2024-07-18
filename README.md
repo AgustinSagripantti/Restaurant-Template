@@ -33,7 +33,6 @@ Para personalizar la plantilla:
 3. **Imágenes**: Sustituye las imágenes en la carpeta `assets`.
 
 ## Estructura del Proyecto
-    ```plaintext
     restaurant-template/
     ├── style.css/
     ├── assets/
