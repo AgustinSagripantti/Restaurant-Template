@@ -29,8 +29,8 @@ Esta es una plantilla personalizable para restaurantes, diseñada con HTML, CSS 
 Para personalizar la plantilla:
 
 1. **Colores y Estilos**: Modifica el archivo `style.css` para cambiar los colores y estilos de la plantilla.
-2. **Contenido del Menú**: Edita el archivo `menu.js` para actualizar los elementos del menú.
-3. **Imágenes y Textos**: Sustituye las imágenes en la carpeta `images` y edita el contenido en el archivo `index.html` para reflejar la información de tu restaurante.
+2. **Contenido**: Edita el archivo `index.html` para reflejar la información de tu restaurante.
+3. **Imágenes**: Sustituye las imágenes en la carpeta `assets`.
 
 ## Estructura del Proyecto
     ```plaintext
