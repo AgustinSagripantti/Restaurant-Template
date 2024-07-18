@@ -1,0 +1,437 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.txt::selection{
+    background-color: #f22;
+    color: #fff;
+}
+
+.capa_transparente_activada {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el último valor para cambiar la opacidad (0 completamente transparente, 1 completamente opaco) */
+    z-index: 1000; /* Asegura que la capa transparente esté sobre otros elementos */
+}
+
+.links_nav_responsive_desactivado{
+    width: 0;
+    transition: 1s;
+}
+
+.links_nav_responsive_activado{
+    width: 40%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: auto;
+    padding: 0;
+    transition: 1s;
+}
+
+.link_nav_responsive_activado{
+    color: #bbb;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.link_nav_responsive_desactivado{
+   display: none;
+}
+
+.icono_equis_menu_desactivado{
+    display: none;
+}
+
+.icono_equis_menu_activado{
+    height: 70px;
+    width: 70px;
+    align-self: flex-end;
+}
+
+.icono_menu_desactivado{
+    display: none;
+}
+
+.icono_menu_activado{
+    height: 30px;
+    width: 70px;
+    margin-left: auto;
+    align-self: center;
+}
+
+.banner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(5, 7, 12, .5), rgba(5, 7, 12, .5)), url(assets/imagen_inicio.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav{
+    padding: 0 5%;
+    display: flex;
+    transition: .5s;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    z-index: 10000;
+}
+
+.nav_fondo_negro{
+    background-color: #000;
+    transition: .7s;
+}
+
+.nombre_nav{
+    color: #fff;
+    font-family: cursive;
+    font-size: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin: 1% 0;
+}
+
+.punto_nombre_nav{
+    color: #f22
+}
+
+.links_nav{
+    margin-left: auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link_nav{
+    color: #bbb;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    transition: .5s;
+    letter-spacing: 1px;
+}
+
+.link_nav:hover{
+    color: #fff;
+    transition: .5s;
+}
+
+.situado{
+    border-bottom: 2px solid #f22;
+    color: #fff;
+}
+
+.eslogan_inicio{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.acercaDe{
+    display: flex;
+    padding: 10% 5%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img_acercaDe{
+    height: 400px;
+    width: 400px;
+    border-radius: 2%;
+}
+
+.parrafo_acercaDe{
+    color: #bbb;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    margin: 0 20%;
+}
+
+.titulo_parrafo_acercaDe{
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+#platos{
+    text-align: center;
+}
+
+.titulo_platos{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.contenedor_cajas{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 5%;
+    padding-bottom: 0;
+    height: 90vh;
+}
+
+.cajas{
+    width: 20%;
+}
+
+.cajas_abajo{
+    margin-top: 10%;
+}
+
+.img_caja{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.titulo_caja{
+    font-family: cursive;
+    font-size: 15px;
+    color: #fff;
+}
+
+.precio_caja{
+    font-family: cursive;
+    font-size: 15px;
+    color: #f22
+}
+
+.parrafo_caja{
+    font-family: cursive;
+    font-size: 13px;
+    color: #bbb;
+}
+
+.boton_menu{
+    text-decoration: none;
+    color: #fff;
+    background-color: #f22;
+    padding: 1%;
+    transition: .5s;
+    border: none;
+    outline: none;
+}
+
+.boton_menu:hover{
+    color: #000;
+    transition: .5s;
+    background-color: #e11;
+}
+
+#contacto{
+    padding: 5% 0;
+    margin-top: 5%;
+}
+
+.titulo_contacto{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+    margin-bottom: 3%;
+}
+
+.contenedor_contacto{
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    outline: 2px solid #bbb;
+    padding: 0 2%;
+    min-width: 452px;
+    margin-right: 3%;
+}
+
+.titulo_form{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    color: #fff;
+    margin: 2% 0;
+    margin-top: 6%;
+}
+
+.entrada{
+    height: 50px;
+    background-color: #222;
+    outline: none;
+    border: 2px solid #bbb;
+    padding: 0 3%;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.TA{
+    resize: vertical;
+    height: 200px;
+    padding: 3%;
+}
+
+.boton_entrada{
+    padding: 3%;
+    width: 25%;
+    margin-top: 5%;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #f22;
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 6%;
+}
+
+.boton_entrada:hover{
+    background-color: #f22;
+    transition: .5s;
+}
+
+.mas_contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    width: 20%;
+    min-width: 332px;
+    justify-content: center;
+    height: 20vh;
+    min-height: 212px;
+    border: 2px solid #bbb;
+    align-items: center;
+}
+
+.caja_contacto{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.imagen_contacto{
+    height: 40px;
+    width: 40px;
+    margin-right: 5%;
+}
+
+.texto_contacto{
+     font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.creditos{
+    color: #bbb;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.corazon{
+    color: rgb(180, 17, 17);
+}
+
+@media only screen and (max-width: 1000px) {
+    .links_nav{
+        display: none;
+    }
+    .contenedor_cajas{
+        flex-wrap: wrap;
+        align-items: start;
+        height: 200vh;
+    }
+    .cajas{
+        min-width: 200px;
+        margin: 0 8%;
+    }
+    .cajas_abajo{
+        margin-top: 20%;
+    }
+    .boton_menu:hover{
+        color: #fff;
+    }
+    .boton_entrada:hover{
+        background-color: #222;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .links_nav{
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 1006px) {
+    .mas_contacto{
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .acercaDe{
+        flex-wrap: wrap-reverse;
+    }
+    .parrafo_acercaDe{
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .img_acercaDe{
+        max-width: 270px;
+        max-height: 270px;
+    }
+    .formulario{
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 653px) {
+    .cajas{
+        margin-top: 2%;
+    }
+    .contenedor_cajas{
+        height: 300vh;
+    }
+.formulario{
+    min-width: auto;
+    width: 100%;
+}
+.mas_contacto{
+    min-width: auto;
+    width: 100%;
+}
+.boton_entrada{
+    width: 30%;
+}
+}
